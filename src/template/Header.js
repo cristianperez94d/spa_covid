@@ -2,10 +2,10 @@ const Header = () => {
     const view = `
         <div class="header-main">
             <div class="header-logo">
-                <a href="/">Estadisticas del Covid-19</a>
+                <a href="#/Home">Estadisticas del Covid-19</a>
             </div>
             <div class="header-nav">
-                <a href="/">
+                <a href="#/Home">
                     Inicio
                 </a>
                 <a href="#/About/">

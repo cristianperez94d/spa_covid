@@ -7,6 +7,7 @@ import resolveRoutes from '../untils/resolveRoutes';
 
 const routes = {
     '/': Home,
+    '/home': Home,
     '/:country': Country,
 }
 
