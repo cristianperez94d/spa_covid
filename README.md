@@ -30,7 +30,10 @@ Proyecto realizado siguiendo el Curso de Single Page Application con JavaScript 
 npm install
 ```
 
-2. Ejecutar
+2. Crear y configurar archivo .env
+
+
+3. Ejecutar
 
 ```
 npm run start

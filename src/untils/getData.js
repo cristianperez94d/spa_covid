@@ -1,7 +1,7 @@
 const API_COVID = 'https://covid-193.p.rapidapi.com/';
 const config = {
     headers: {
-        'x-rapidapi-key': '58fd6b4dc2mshacd0d0bea5d0fa7p12173cjsn6400e572a1eb',
+        'x-rapidapi-key': process.env.API_COVID,//'58fd6b4dc2mshacd0d0bea5d0fa7p12173cjsn6400e572a1eb',
         'x-rapidapi-host': 'covid-193.p.rapidapi.com'
     }
 }

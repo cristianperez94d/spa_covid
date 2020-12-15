@@ -1,6 +1,8 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require("copy-webpack-plugin");
+const Dotenv = require('dotenv-webpack');
+
 module.exports = {
     entry: './src/index.js',
     output: {
@@ -38,6 +40,14 @@ module.exports = {
                 from: "./src/styles/styles.css",
                 to: "" 
             }]
-        )
+        ),
+        new Dotenv({
+            path: './.env',
+            safe: true,
+            allowEmptyValues: true,
+            systemvars: true,
+            silent: true,
+            defaults: false
+        })
     ]
 }
