@@ -38,6 +38,17 @@ npm install
 ```
 npm run start
 ```
+<b>Nota:</b> Para Ejecutar la prueba local descomentar las siguientes lineas ya que para produccion en este caso especifico las variables de entorno se configuran directamente desde el repositorio.
+```
+new Dotenv({
+             path: './.env',
+             safe: true,
+             allowEmptyValues: true,
+             systemvars: true,
+             silent: true,
+             defaults: false
+          })
+```
 
 ## 🧐 Resultado <a name = "result"></a>
 

@@ -41,13 +41,13 @@ module.exports = {
                 to: "" 
             }]
         ),
-        new Dotenv({
-            path: './.env',
-            safe: true,
-            allowEmptyValues: true,
-            systemvars: true,
-            silent: true,
-            defaults: false
-        })
+        // new Dotenv({
+        //     path: './.env',
+        //     safe: true,
+        //     allowEmptyValues: true,
+        //     systemvars: true,
+        //     silent: true,
+        //     defaults: false
+        // })
     ]
 }
