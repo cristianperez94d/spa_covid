@@ -6,6 +6,8 @@ node_js:
   - "12"
 git:
   depth: 3
+env:
+  - API_COVID=$API_COVID
 script:
   - yarn build
 deploy:
