@@ -9,7 +9,7 @@ git:
 env:
   - API_COVID: $API_COVID
 script:
-  - yarn build
+  - yarn build-prod
 deploy:
   provider: pages
   edge: true

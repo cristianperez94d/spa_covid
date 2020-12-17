@@ -1,11 +1,10 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require("copy-webpack-plugin");
-const Dotenv = require('dotenv-webpack');
 
 module.exports = {
     entry: './src/index.js',
-    mode: 'development',
+    mode: 'production',
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: 'main.js'
@@ -42,13 +41,5 @@ module.exports = {
                 to: "" 
             }]
         ),
-        new Dotenv({
-            path: './.env',
-            safe: true,
-            allowEmptyValues: true,
-            systemvars: true,
-            silent: true,
-            defaults: false
-        })
     ]
 }
