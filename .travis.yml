@@ -7,7 +7,7 @@ node_js:
 git:
   depth: 3
 env:
-  API_COVID: ${{ secrets.API_COVID }}
+  - API_COVID: ${{ secrets.API_COVID }}
 script:
   - yarn build-prod
 deploy:
